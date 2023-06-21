@@ -45,6 +45,6 @@ image.resize((50, 50)).save(os.path.join(dirname,"StoreLogo.png"))
 image = Image.open(srcImage).resize((256, 256))
 smaller_image = image.resize((16, 16))
 # 将 Image 对象保存为 ICO 文件，包含多个不同尺寸的图像
-image.save("icon.ico", sizes=[(256, 256),(16, 16), (32, 32), (64, 64), (128, 128)])
+image.save(os.path.join(dirname,"icon.ico"), sizes=[(256, 256),(16, 16), (32, 32), (64, 64), (128, 128)])
 
-Image.open(srcImage).resize((1024, 1024)).save("icon.icns")
+Image.open(srcImage).resize((1024, 1024)).save(os.path.join(dirname,"icon.icns"))
