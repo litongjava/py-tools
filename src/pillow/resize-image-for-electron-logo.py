@@ -3,7 +3,7 @@ import os.path
 from PIL import Image
 
 # 读取原始图像
-srcImage = r"F:\code\frontend\project-litongjava\electron-google-translate\build\Google_Translate_logo.svg.png"
+srcImage = r"F:\code\frontend\project-litongjava\electron-google-brad-work\src\logo\Google_Bard_logo.svg.png"
 dirname = os.path.dirname(srcImage)
 
 # 输出不同尺寸的图像
