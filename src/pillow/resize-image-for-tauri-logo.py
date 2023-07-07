@@ -23,7 +23,7 @@ import os.path
 from PIL import Image
 
 # 读取原始图像
-srcImage = r"F:\code\rust\project-litongjava\tauri-youtube\icons\Youtube_logo.png"
+srcImage = r"F:\code\rust\project-litongjava\tauri-uh-class-availability\icons\src.jpg"
 dirname = os.path.dirname(srcImage)
 image = Image.open(srcImage)
 
@@ -45,6 +45,6 @@ image.resize((50, 50)).save(os.path.join(dirname,"StoreLogo.png"))
 image = Image.open(srcImage).resize((256, 256))
 smaller_image = image.resize((16, 16))
 # 将 Image 对象保存为 ICO 文件，包含多个不同尺寸的图像
-image.save(os.path.join(dirname,"icon.ico"), sizes=[(256, 256),(16, 16), (32, 32), (64, 64), (128, 128)])
+image.save(os.path.join(dirname, "icon.ico"), formats="ICO", sizes=[(256, 256)])
 
 Image.open(srcImage).resize((1024, 1024)).save(os.path.join(dirname,"icon.icns"))
