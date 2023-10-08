@@ -23,7 +23,7 @@ import os.path
 from PIL import Image
 
 # 读取原始图像
-srcImage = r"F:\code\rust\project-litongjava\tauri-uh-class-availability\icons\src.jpg"
+srcImage = r"F:\code\rust\project-litongjava\tauri-chatgpt\icons\src.png"
 dirname = os.path.dirname(srcImage)
 image = Image.open(srcImage)
 
